@@ -1,18 +1,9 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Lottie from "lottie-react";
-import { useEffect, useState } from "react";
+import washingMachineAnimation from "@/assets/animations/washing-machine.json";
 
 const Hero = () => {
-  const [animationData, setAnimationData] = useState(null);
-
-  useEffect(() => {
-    // Fetch a washing machine Lottie animation
-    fetch("https://lottie.host/4a679f57-c92d-44c1-ae5e-d6eb85c12147/oN9NzubENb.json")
-      .then((response) => response.json())
-      .then((data) => setAnimationData(data))
-      .catch(() => console.log("Animation failed to load"));
-  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
@@ -76,15 +67,13 @@ const Hero = () => {
 
           {/* Right animation */}
           <div className="relative lg:h-[600px] flex items-center justify-center animate-scale-in">
-            {animationData && (
-              <div className="w-full max-w-lg">
-                <Lottie 
-                  animationData={animationData} 
-                  loop={true}
-                  className="drop-shadow-2xl"
-                />
-              </div>
-            )}
+            <div className="w-full max-w-lg">
+              <Lottie 
+                animationData={washingMachineAnimation} 
+                loop={true}
+                className="drop-shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       </div>
