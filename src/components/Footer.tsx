@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import { FaShoppingBag, FaFacebook, FaTwitter, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaShoppingBag,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,16 +25,26 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
-              Professional laundry services at your doorstep. Clean, fresh, and convenient.
+              Professional laundry services at your doorstep. Clean, fresh, and
+              convenient.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="https://web.facebook.com/profile.php?id=61551130225283"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <FaFacebook className="text-xl" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="https://x.com/0xDaniiel"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <FaTwitter className="text-xl" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <FaInstagram className="text-xl" />
               </a>
             </div>
@@ -37,22 +55,34 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="/#services"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a href="/#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="/#pricing"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="/#how-it-works" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="/#how-it-works"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
                   How It Works
                 </a>
               </li>
               <li>
-                <Link to="/booking" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  to="/booking"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
                   Book Now
                 </Link>
               </li>
@@ -76,15 +106,21 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <FaPhone className="text-primary mt-1 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-sm text-muted-foreground">
+                  +1 (555) 123-4567
+                </span>
               </li>
               <li className="flex items-start space-x-3">
                 <FaEnvelope className="text-primary mt-1 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">info@freshwash.com</span>
+                <span className="text-sm text-muted-foreground">
+                  info@freshwash.com
+                </span>
               </li>
               <li className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-primary mt-1 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">123 Clean Street, Fresh City, FC 12345</span>
+                <span className="text-sm text-muted-foreground">
+                  123 Clean Street, Fresh City, FC 12345
+                </span>
               </li>
             </ul>
           </div>
