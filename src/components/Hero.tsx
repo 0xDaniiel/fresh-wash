@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Lottie from "lottie-react";
 import washingMachineAnimation from "@/assets/animations/washing-machine.json";
-import boyIroningAnimation from "@/assets/animations/boy-ironing.json";
-
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
@@ -83,7 +81,7 @@ const Hero = () => {
           <div className="relative lg:h-[600px] flex items-center justify-center animate-scale-in">
             <div className="w-full max-w-lg">
               <Lottie
-                animationData={boyIroningAnimation}
+                animationData={washingMachineAnimation}
                 loop={true}
                 className="drop-shadow-2xl"
               />
