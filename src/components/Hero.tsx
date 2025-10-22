@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import Lottie from "lottie-react";
-import washingMachineAnimation from "@/assets/animations/washing-machine.json";
-import boyIroningAnimation from "@/assets/animations/boy-ironing.json";
+import heroImage from "@/assets/hero-laundry.png";
 
 const Hero = () => {
   return (
@@ -79,13 +77,13 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right animation */}
+          {/* Right illustration */}
           <div className="relative lg:h-[600px] flex items-center justify-center animate-scale-in">
             <div className="w-full max-w-lg">
-              <Lottie
-                animationData={boyIroningAnimation}
-                loop={true}
-                className="drop-shadow-2xl"
+              <img
+                src={heroImage}
+                alt="Professional laundry service illustration"
+                className="drop-shadow-2xl w-full h-auto"
               />
             </div>
           </div>
